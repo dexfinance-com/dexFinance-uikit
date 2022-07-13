@@ -1,0 +1,90 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/timofeydulkin/Desktop/Projects/dexFinance/pancake-uikit/node_modules/.bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.13.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/timofeydulkin/Desktop/Projects/dexFinance/pancake-uikit/package.json: Unexpected token f in JSON at position 1775
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@pancakeswap/uikit",
+    "version": "0.64.0",
+    "description": "Set of UI components for pancake projects",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+    "license": "MIT",
+    "scripts": {
+      "start": "yarn storybook",
+      "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+      "watch": "rollup -c -w",
+      "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+      "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+      "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+      "storybook": "start-storybook -p 6006",
+      "storybook:build": "build-storybook",
+      "prepublishOnly": "yarn build"
+    },
+    "devDependencies": {
+      "@rollup/plugin-typescript": "^8.3.3",
+      "@rollup/plugin-url": "^7.0.0",
+      "@testing-library/react": "^11.2.5",
+      "@types/lodash": "^4.14.168",
+      "@types/react-dom": "^17.0.5",
+      "@types/styled-components": "^5.1.25",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-router-dom": "^5.2.0",
+      "rollup": "^2.76.0",
+      "styled-components": "^5.2.0",
+      "tslib": "^2.4.0",
+      "typescript": "3"
+    },
+    "peerDependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "styled-components": "^5.2.3"
+    },
+    "dependencies": {
+      "@popperjs/core": "^2.9.2",
+      "@types/styled-system": "^5.1.10",
+      "lodash": "^4.17.20",
+      "react-popper": "^2.2.5",
+      "storybook": "^6.5.9",
+      "styled-system": "^5.1.5"
+    },
+    "publishConfig": {
+      "access": "public"
+    },
+    "resolutions": {
+      "@types/react": "^17.0.1",
+      "@types/react-dom": "^17.0.1"
+    }
+  }
+  f
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

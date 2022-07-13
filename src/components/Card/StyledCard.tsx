@@ -42,7 +42,6 @@ const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, them
 };
 
 export const StyledCard = styled.div<StyledCardProps>`
-  background: ${getBorderColor};
   border-radius: ${({ theme }) => theme.radii.card};
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;
@@ -54,8 +53,7 @@ export const StyledCard = styled.div<StyledCardProps>`
       animation: ${PromotedGradient} 3s ease infinite;
       background-size: 400% 400%;
     `}
-
-  padding: 1px 1px 3px 1px;
+  
 
   ${space}
 `;

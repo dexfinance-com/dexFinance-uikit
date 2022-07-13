@@ -46,6 +46,7 @@
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",
     "react-popper": "^2.2.5",
+    "storybook": "^6.5.9",
     "styled-system": "^5.1.5"
   },
   "publishConfig": {
