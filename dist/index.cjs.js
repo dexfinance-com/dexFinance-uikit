@@ -3173,11 +3173,10 @@ var Icon$1 = function (props) {
 
 var rotate = styled.keyframes(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var Container = styled__default["default"].div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var RotatingPancakeIcon = styled__default["default"](Icon$1)(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
+styled__default["default"](Icon$1)(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
 var Spinner = function (_a) {
-    var _b = _a.size, size = _b === void 0 ? 128 : _b;
-    return (React__default["default"].createElement(Container, null,
-        React__default["default"].createElement(RotatingPancakeIcon, { width: size * 0.5 + "px" })));
+    _a.size;
+    return (React__default["default"].createElement(Container, null));
 };
 var templateObject_1$t, templateObject_2$i, templateObject_3$8;
 
